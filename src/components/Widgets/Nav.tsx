@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import MobileMenu from './../Shared/MobileMenu'
 import Links from '../Shared/Links'
-import { Routes } from '../../constants/index'
+// import { Routes } from '../../constants/index'
 
 const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,10 +10,10 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      {isMobile && (
+      {/* {isMobile && (
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} routes={Routes} />
       )}
-      {!isMobile && <Links routes={Routes} />}
+      {!isMobile && <Links routes={Routes} />} */}
     </>
   )
 }
