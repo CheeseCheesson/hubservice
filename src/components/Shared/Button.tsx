@@ -8,9 +8,9 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ onClick, children, classNames, ...rest }) => {
   return (
     <button
+      {...rest}
       className={`${classNames} border-solid border-2 p-4`}
       onClick={onClick}
-      {...rest}
     >
       {children}
     </button>

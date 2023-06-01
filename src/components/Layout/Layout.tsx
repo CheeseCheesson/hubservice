@@ -1,22 +1,25 @@
 import { Outlet } from "react-router-dom";
-// import Header from "../Widgets/Header";
-// import motherboard from "../../assets/motherboard.webp";
+import { CurrentYear } from "../../utils";
+import Header from "../Widgets/Header";
 
 const Layout = () => {
-  const currentYear = new Date().getFullYear()
+
   return (
-    <div
-      className="overflow-x-hidden min-h-screen flex flex-col max-w-container my-0 p-0 mx-auto bg-no-repeat bg-right-top"
-      // style={{ backgroundImage: `url(${motherboard})` }}
-    >
-      {/* <Header /> */}
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <footer className="bg-gray-800 p-6 text-white text-center">
-        © {currentYear} Все права защищены.
+    <>
+      <Header />
+      <div
+        className="overflow-x-hidden min-h-screen flex flex-col max-w-container my-0 p-0 mx-auto"
+      >
+        <main className="flex-1 bg-white-smoke">
+          <Outlet />
+        </main>
+
+      </div>
+      <footer className="bg-midnight-blue p-6 text-white text-center">
+        © {CurrentYear} Все права защищены.
       </footer>
-    </div>
+    </>
+
   );
 };
 
