@@ -34,12 +34,12 @@ module.exports = {
       "pumpkin-orange": "#FCA705",
       "white-smoke": "#F3F3F3",
 
-      "orchid-pink": " #EC6AD2", //20%
-      "pastel-green": " #89EC99", //20%
-      "cornflower-blue": " #52A8EC", //20%
-      "lime-green": " #C3E031", //20%
-      salmon: " #F7864D", //20%
-      lime: " #84FF38", //20%
+      "orchid-pink": "RGBA(236, 106, 210, 0.2)", //20%
+      "pastel-green": "RGBA(137, 236, 153, 0.2)", //20%
+      "cornflower-blue": "RGBA(82, 168, 236, 0.2)", //20%
+      "lime-green": "RGBA(195, 224, 49, 0.2)", //20%
+      salmon: "RGBA(247, 134, 77, 0.2)", //20%
+      lime: "RGBA(132, 255, 56, 0.2)", //20%
     },
     screens: {
       'xl': { 'max': '1365px' }, // 1024+

@@ -10,7 +10,7 @@ const Layout = () => {
       <div
         className="overflow-x-hidden min-h-screen flex flex-col max-w-container my-0 p-0 mx-auto"
       >
-        <main className="flex-1 bg-white-smoke">
+        <main className="flex-1">
           <Outlet />
         </main>
 
