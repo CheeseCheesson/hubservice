@@ -1,4 +1,5 @@
 import { ImageFactory, ImageMap } from "../../assets";
+import { CurrentYear } from "../../utils";
 import ImageItems from "../Widgets/ImageItems";
 
 const Home = () => {
@@ -52,12 +53,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center h-72 bg-pumpkin-orange text-5xl text-white mb-28  xl:text-3xl lg:text-xl sm:text-md sm:text-center sm:h-36 sm:mb-5">
-        <div className="h-5/6 bg-maroon w-full mx-7 flex justify-evenly items-center">
+      <div className="flex items-center justify-center h-72 bg-pumpkin-orange text-3xl text-white mb-28  xl:text-xl xl:text-center sm:text-sm sm:h-36 sm:mb-10">
+        <div className="h-5/6 bg-maroon w-full mx-7 flex justify-evenly items-center lg:mx-3">
           <img src={ImageFactory.factory} alt="" className="w-52 h-48  md:hidden" />
-          <span>Работаем в том числе и с предприятиями</span>
+          <div className="lg:px-2">
+            Мы сотрудничаем не только с частными лицами, но и с предприятиями</div>
         </div>
       </div>
+      <footer className="bg-midnight-blue p-6 text-white text-center">
+        © {CurrentYear} Все права защищены.
+      </footer>
     </>
   );
 };

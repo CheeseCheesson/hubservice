@@ -7,7 +7,7 @@ function App() {
     {
       path: "/", element: <Layout />,
       children: [
-        { path: "/", element: <Home /> },
+        { path: "/sherb", element: <Home /> },
       ]
     },
   ]);
