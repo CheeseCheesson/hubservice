@@ -39,13 +39,13 @@ const ImageItems: FC = () => {
   };
 
   return (
-    <div className="flex flex-wrap mx-9 justify-center gap-12 mb-5">
+    <div className="flex flex-wrap mx-9 justify-center gap-12 mb-5 md:gap-5 sm:hidden">
       {items.map((item, index) => (
         <img
           key={index}
           src={item.src}
           alt=""
-          className="w-64 h-56 rounded-3xl px-2 py-4"
+          className="w-64 h-56 rounded-3xl px-2 py-4 xl:w-1/4 xl:h-40 lg:h-28 md:h-20"
           style={{ backgroundColor: item.color, transition: "background-color 0.7s" }}
         />
       ))}
